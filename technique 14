@@ -1,0 +1,11 @@
+# Image-pro-breast-cancer
+
+
+x=imread('breast2.jpg')
+imshow('breast2.jpg')
+imhist(x)
+i2=im2double(x)
+s=skewness(i2(:))
+l=kurtosis(i2(:))
+v=var(i2(:))
+m=mean(i2(:))
