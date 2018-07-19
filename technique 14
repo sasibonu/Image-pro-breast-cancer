@@ -9,3 +9,23 @@ s=skewness(i2(:))
 l=kurtosis(i2(:))
 v=var(i2(:))
 m=mean(i2(:))
+
+
+
+
+2nd time
+
+s=[]
+k=[]
+v=[]
+m=[]
+for i= 1:N
+    x(i)=imread('sasro.jpg')
+    imshow('sasro.jpg')
+    imhist(x(i))
+    i2=im2double(x(i))
+    s(i)=skewness(i2(:)) 
+    k(i)=kurtosis(i2(:))
+    v(i)=var(i2(:))
+    m(i)=mean(i2(:))
+end
