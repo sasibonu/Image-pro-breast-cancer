@@ -73,7 +73,7 @@ for i=1:N
     if(M3(i)==M)
        thm=M1(i);
     end
-end
+end 
 
         
     
