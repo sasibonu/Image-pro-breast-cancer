@@ -75,5 +75,7 @@ for i=1:N
     end
 end 
 
-        
+   
+   
+   treebagger(numtrees,x,y)
     
