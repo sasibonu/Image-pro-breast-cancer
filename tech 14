@@ -25,6 +25,10 @@ for i= 1:N
     glcm=graycomatrix(i2);
 
     F=graycoprops(glcm,{'Contrast','Homogeneity','Correlation','Energy'}); 
+     c(i)=F.Contrast;
+     h(i)=F.Homogeneity;
+     co(i)=F.Correlation;
+     e(i)=F.Energy;
 
 
 end
@@ -35,6 +39,10 @@ V2=sort(v);
 M2=sort(m);
 ST2=sort(st);
 C2=sort(c);
+CO2=sort(co);
+H2=sort(h);
+E2=sort(e);
+
 for i =1:N
     S1(i)=(S2(i)+S2(i+1))/2;
     err=immse(s(i),S1(i));
@@ -54,13 +62,26 @@ for i =1:N
     C1(i)=(C2(i)+C2(i+1))/2;
     err=immse(c(i),C1(i));
     C3(i)=err;
+    CO1(i)=(CO2(i)+CO2(i+1))/2;
+    err=immse(co(i),CO1(i));
+    CO3(i)=err;
+    H1(i)=(H2(i)+H2(i+1))/2;
+    err=immse(h(i),H1(i));
+    H3(i)=err;
+    E1(i)=(E2(i)+E2(i+1))/2;
+    err=immse(e(i),E1(i));
+    E3(i)=err;
 end
+
 S=min(S3);
 K=min(K3);
 V=min(V3);
 M=min(M3);
 ST=min(ST3);
 C=min(C3);
+CO=min(CO3);
+H=min(H3);
+E=min(E3);
 
 for i=1:N
     if(S3(i)==S)
@@ -81,9 +102,18 @@ for i=1:N
     if(C3(i)==C)
        thc=C1(i);
     end
+    if(CO3(i)==CO)
+       thco=CO1(i);
+    end
+    if(H3(i)==H)
+       thh=H1(i);
+    end
+    if(E3(i)==E)
+       the=E1(i);
+    end
 end 
 
    
-   
+ numtrees=9 
  b=treebagger(numtrees,x,y)
    
