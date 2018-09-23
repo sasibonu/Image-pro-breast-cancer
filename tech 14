@@ -114,6 +114,6 @@ for i=1:N
 end 
 
    
- numtrees=9 
+ numtrees=9;
  b=treebagger(numtrees,x,y)
    
