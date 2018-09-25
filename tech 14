@@ -10,6 +10,7 @@ m(1)=0;
 st(1)=0;
 c(1)=0;
 
+
 for i= 1:N
     z=addpath('This PC/Desktop');
     
