@@ -1,0 +1,2 @@
+net=feedforwardnet;  %default 1 hidden layers with 10 neurons
+net=configure(net,)
