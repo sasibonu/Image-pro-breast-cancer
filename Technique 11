@@ -1,6 +1,19 @@
+Pattern recognition NN
 load dataset
 net=feedforwardnet(20);  %default 1 hidden layers with 10 neurons
-net=configure(net,)
+net=configure(net)
+view(net)  %for viewing network
 net= init(net);  %for reintialisation
 [net,tr] = train(net,x,t);
 plotperform(tr)   %for plotting
+
+
+
+
+Clustering SOM NN
+x= dataset;
+net=selforgmap;
+net=train(net,x);
+view(net)
+y = net(x);
+classes = vec2ind(y);     %https://in.mathworks.com/help/deeplearning/ref/vec2ind.html
