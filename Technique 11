@@ -1,2 +1,6 @@
-net=feedforwardnet;  %default 1 hidden layers with 10 neurons
+load dataset
+net=feedforwardnet(20);  %default 1 hidden layers with 10 neurons
 net=configure(net,)
+net= init(net);  %for reintialisation
+[net,tr] = train(net,x,t);
+plotperform(tr)   %for plotting
