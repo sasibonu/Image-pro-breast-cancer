@@ -10,9 +10,13 @@ plotperform(tr)   %for plotting
 
 
 
+
+http://in.mathworks.com/help/deeplearning/ref/selforgmap.html;jsessionid=b57e6f196eb9289c42f826beb297
+https://in.mathworks.com/matlabcentral/fileexchange/39930-self-organizing-map-simple-demonstration
+
 Clustering SOM NN
 x= dataset;
-net=selforgmap;
+net=selforgmap;      %https://in.mathworks.com/matlabcentral/answers/50059-how-to-set-the-dimensions-for-a-som-map
 net=train(net,x);
 plotsompos(net)    %for viewing neuron positions
 view(net)
