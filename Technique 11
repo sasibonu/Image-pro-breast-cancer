@@ -14,6 +14,7 @@ Clustering SOM NN
 x= dataset;
 net=selforgmap;
 net=train(net,x);
+plotsompos(net)    %for viewing neuron positions
 view(net)
 y = net(x);
 classes = vec2ind(y);     %https://in.mathworks.com/help/deeplearning/ref/vec2ind.html
