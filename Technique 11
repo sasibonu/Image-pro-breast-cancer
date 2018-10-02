@@ -22,3 +22,9 @@ plotsompos(net)    %for viewing neuron positions
 view(net)
 y = net(x);
 classes = vec2ind(y);     %https://in.mathworks.com/help/deeplearning/ref/vec2ind.html
+
+
+
+SVM classification
+Mdl = fitcsvm(X,Y)   %https://in.mathworks.com/help/stats/fitcsvm.html
+group= svmclassify(SVMStruct,Sample)     %https://in.mathworks.com/help/stats/svmclassify.html#bsr2co6-1-SVMStruct
