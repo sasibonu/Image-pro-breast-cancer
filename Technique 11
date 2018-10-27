@@ -24,6 +24,11 @@ y = net(x);
 classes = vec2ind(y);     %https://in.mathworks.com/help/deeplearning/ref/vec2ind.html
 
 
+Various SOM's have to be used and various SOM outputs i.e. various number of inputs for classification model have to be created.
+After using SOM all those SOM models need to be passed through MARS.MARS is used for classification in this case
+to check which SOM outputs are producing the best results.MARS is also used to identify and arrange the importance of variables.
+After figuring out which SOM outputs are the most effecient,those are used as inputs for SVM classification.
+
 https://in.mathworks.com/matlabcentral/answers/33091-classification-using-svm
 
 
