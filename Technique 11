@@ -16,8 +16,8 @@ https://in.mathworks.com/matlabcentral/fileexchange/39930-self-organizing-map-si
 
 Clustering SOM NN
 x= dataset;
-net1=selforgmap([6,6]);    %https://in.mathworks.com/help/deeplearning/ug/cluster-with-self-organizing-map-neural-network.html#bss4b_l-13
-[net1,tr1]=train(net1,x);         %http://in.mathworks.com/help/deeplearning/gs/cluster-data-with-a-self-organizing-map.html;jsessionid=1a6908e4d65b171369ddeca96d23
+net1=selforgmap([6,6]);      %https://in.mathworks.com/help/deeplearning/ug/cluster-with-self-organizing-map-neural-network.html#bss4b_l-13
+[net1,tr1]=train(net1,x);    %http://in.mathworks.com/help/deeplearning/gs/cluster-data-with-a-self-organizing-map.html;jsessionid=1a6908e4d65b171369ddeca96d23
 y = net(x);
 view(net)
 % Plots
