@@ -16,18 +16,45 @@ https://in.mathworks.com/matlabcentral/fileexchange/39930-self-organizing-map-si
 
 Clustering SOM NN
 x= dataset;
-net=selforgmap;      %https://in.mathworks.com/matlabcentral/answers/50059-how-to-set-the-dimensions-for-a-som-map
-net=train(net,x);
-plotsompos(net)    %for viewing neuron positions
-view(net)
+net1=selforgmap([6,6]);    %https://in.mathworks.com/help/deeplearning/ug/cluster-with-self-organizing-map-neural-network.html#bss4b_l-13
+[net1,tr1]=train(net1,x);         %http://in.mathworks.com/help/deeplearning/gs/cluster-data-with-a-self-organizing-map.html;jsessionid=1a6908e4d65b171369ddeca96d23
 y = net(x);
-classes = vec2ind(y);     %https://in.mathworks.com/help/deeplearning/ref/vec2ind.html
+view(net)
+% Plots
+% Uncomment these lines to enable various plots.
+% figure, plotsomtop(net)
+% figure, plotsomnc(net)
+% figure, plotsomnd(net)
+% figure, plotsomplanes(net)
+% figure, plotsomhits(net,inputs)
+% figure, plotsompos(net,inputs)
 
 
 Various SOM's have to be used and various SOM outputs i.e. various number of inputs for classification model have to be created.
-After using SOM all those SOM models need to be passed through MARS.MARS is used for classification in this case
-to check which SOM outputs are producing the best results.MARS is also used to identify and arrange the importance of variables.
-After figuring out which SOM outputs are the most effecient,those are used as inputs for SVM classification.
+
+net2=selforgmap([8,8]);   
+[net2,tr2]=train(net2,x);
+
+net3=selforgmap([10,10]);   
+[net3,tr3]=train(net3,x);
+
+net4=selforgmap([11,11]);   
+[net4,tr4]=train(net4,x);
+
+net5=selforgmap([12,12]);   
+[net5,tr5]=train(net5,x);
+
+net6=selforgmap([13,13]);   
+[net6,tr6]=train(net6,x);
+
+net7=selforgmap([14,14]);   
+[net7,tr7]=train(net7,x);
+
+net8=selforgmap([15,15]);   
+[net8,tr8]=train(net8,x);
+
+net9=selforgmap([22,22]);   
+[net9,tr9]=train(net9,x);
 
 https://in.mathworks.com/matlabcentral/answers/33091-classification-using-svm
 
