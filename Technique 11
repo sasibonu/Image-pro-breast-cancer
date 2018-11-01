@@ -56,7 +56,7 @@ net8=selforgmap([15,15]);
 net9=selforgmap([22,22]);   
 [net9,tr9]=train(net9,x);
 
-https://in.mathworks.com/matlabcentral/answers/33091-classification-using-svm
+https://in.mathworks.com/matlabcentral/answers/33091-classification-using-svm.
 
 
 SVM classification
