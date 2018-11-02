@@ -1,1 +1,5 @@
-Neural networks
+https://ieeexplore.ieee.org/document/745619
+http://sci-hub.tw/https://doi.org/10.1109/IEMBS.1998.745619
+
+%Crop the image and take the ROI of 120*120 pixels(smaller out of two, the other one being 420*420)
+
