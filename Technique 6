@@ -1,7 +1,7 @@
 %https://ieeexplore.ieee.org/document/745619
 %http://sci-hub.tw/https://doi.org/10.1109/IEMBS.1998.745619
 
-%Crop the image and take the ROI of 120*120 pixels(smaller out of two, the other one being 420*420)
+%Resolution of 100 pixels per cm, crop the image and take the ROI of 120*120 pixels(smaller out of two, the other one being 420*420)
 %Extract input features
 
 http://in.mathworks.com/help/deeplearning/gs/classify-patterns-with-a-neural-network.html;jsessionid=6964bb83128aa2c19ba9aa19ac61#f9-26645
