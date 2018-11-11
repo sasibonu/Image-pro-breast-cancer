@@ -52,11 +52,13 @@ imshow(bw)
 
 Mdl = fitcsvm(X,Y,'KernelFunction','rbf')   %https://in.mathworks.com/help/stats/fitcsvm.html
 %group= svmclassify(SVMStruct,Sample)     %https://in.mathworks.com/help/stats/svmclassify.html#bsr2co6-1-SVMStruct
-label = predict(Md1,X)       %https://in.mathworks.com/help/stats/classreg.learning.classif.compactclassificationsvm.predict.html
-
+label1 = predict(Md1,X)       %https://in.mathworks.com/help/stats/classreg.learning.classif.compactclassificationsvm.predict.html
+plotroc(Y,label1)            %https://in.mathworks.com/help/deeplearning/ref/plotroc.html
 
 Md2 = fitcsvm(X,Y,'KernelFunction','linear')
-label = predict(Md2,X)
+label2 = predict(Md2,X)
+plotroc(Y,label2)      %https://in.mathworks.com/help/stats/perfcurve.html
 
 Md3 = fitcsvm(X,Y,'KernelFunction','polynomial')    %https://in.mathworks.com/matlabcentral/answers/96276-how-does-svmtrain-determine-polynomial-and-rbf-kernel-parameters-gamma-c-in-the-bioinformatics-too
-label = predict(Md3,X)
+label3 = predict(Md3,X)
+plotroc(Y,label3)
