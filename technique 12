@@ -40,3 +40,5 @@ imshow(bw)
 %https://in.mathworks.com/help/images/ref/imfill.html      %For filling the uneven gaps
 %https://in.mathworks.com/help/images/detecting-a-cell-using-image-segmentation.html     % An example
 
+
+%Extract angle of curvature which I still don't know how
