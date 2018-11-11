@@ -18,3 +18,25 @@ title('Gaussian filtered image, \sigma = default(0.5)')
 
 
 %Anisotropic diffusion method to reduce multiplicative (speckle) noise 
+%https://viewer.mathworks.com/?viewer=plain_code&url=https%3A%2F%2Fin.mathworks.com%2Fmatlabcentral%2Fmlc-downloads%2Fdownloads%2Fsubmissions%2F36906%2Fversions%2F1%2Fcontents%2FDPAD_toolbox%2Fdpad.m&embed=web
+%https://in.mathworks.com/matlabcentral/fileexchange/36906-detail-preserving-anosotropic-diffusion-for-speckle-filtering-dpad
+
+%Image segmentation
+
+%https://in.mathworks.com/help/images/ref/activecontour.html
+%https://in.mathworks.com/matlabcentral/fileexchange/34548-active-contour-without-edge
+%https://in.mathworks.com/matlabcentral/fileexchange/19567-active-contour-segmentation
+
+
+I = imread('coins.png');
+mask = zeros(size(I));
+mask(25:end-25,25:end-25) = 1;
+figure
+imshow(mask)
+bw = activecontour(I,mask,n);    %no. of iterations
+figure
+imshow(bw)
+
+%https://in.mathworks.com/help/images/ref/imfill.html      %For filling the uneven gaps
+%https://in.mathworks.com/help/images/detecting-a-cell-using-image-segmentation.html     % An example
+
