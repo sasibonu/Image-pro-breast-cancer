@@ -44,3 +44,19 @@ imshow(bw)
 %Extract angle of curvature which I still don't know how
 %Extract shape of masses which I still don't know how
 %Extract acoustic shadow feature which I don't know how
+
+%SVM classification
+
+%https://in.mathworks.com/help/stats/support-vector-machines-for-binary-classification.html#bss0s6_-1
+%https://in.mathworks.com/matlabcentral/fileexchange/63033-svm-using-various-kernels
+
+Mdl = fitcsvm(X,Y,'KernelFunction','rbf')   %https://in.mathworks.com/help/stats/fitcsvm.html
+%group= svmclassify(SVMStruct,Sample)     %https://in.mathworks.com/help/stats/svmclassify.html#bsr2co6-1-SVMStruct
+label = predict(Md1,X)       %https://in.mathworks.com/help/stats/classreg.learning.classif.compactclassificationsvm.predict.html
+
+
+Md2 = fitcsvm(X,Y,'KernelFunction','linear')
+label = predict(Md2,X)
+
+Md3 = fitcsvm(X,Y,'KernelFunction','polynomial')    %https://in.mathworks.com/matlabcentral/answers/96276-how-does-svmtrain-determine-polynomial-and-rbf-kernel-parameters-gamma-c-in-the-bioinformatics-too
+label = predict(Md3,X)
