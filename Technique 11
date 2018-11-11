@@ -56,10 +56,11 @@ net8=selforgmap([15,15]);
 net9=selforgmap([22,22]);   
 [net9,tr9]=train(net9,x);
 
-https://in.mathworks.com/matlabcentral/answers/33091-classification-using-svm.
+%https://in.mathworks.com/matlabcentral/answers/33091-classification-using-svm.
 
 
-SVM classification
+%SVM classification
+
 Mdl = fitcsvm(X,Y)   %https://in.mathworks.com/help/stats/fitcsvm.html
 %group= svmclassify(SVMStruct,Sample)     %https://in.mathworks.com/help/stats/svmclassify.html#bsr2co6-1-SVMStruct
 label = predict(Md1,X)       %https://in.mathworks.com/help/stats/classreg.learning.classif.compactclassificationsvm.predict.html
