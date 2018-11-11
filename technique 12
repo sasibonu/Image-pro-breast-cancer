@@ -42,3 +42,5 @@ imshow(bw)
 
 
 %Extract angle of curvature which I still don't know how
+%Extract shape of masses which I still don't know how
+%Extract acoustic shadow feature which I don't know how
