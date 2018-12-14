@@ -1,3 +1,16 @@
 %  http://sci-hub.tw/https://doi.org/10.1109/ICME.2004.1394457
 
 % umbra and top 
+
+
+%https://in.mathworks.com/help/images/ref/strel.html#bu7pnv2-1
+
+SE1 = offsetstrel('ball',r,h)          %https://in.mathworks.com/help/images/ref/offsetstrel.html
+J1 = imopen(I,SE1)                     %https://in.mathworks.com/help/images/ref/imopen.html
+
+SE2 = strel('sphere',r)
+J2 = imopen(I,SE2)                     %https://in.mathworks.com/help/images/ref/strel.html#bu7pnv2-1
+
+Jout = imsubtract(J1,J2)               %https://in.mathworks.com/help/images/ref/imsubtract.html
+ or 
+Jout = imabsdiff(J1,J2)                %https://in.mathworks.com/help/images/ref/imabsdiff.html
