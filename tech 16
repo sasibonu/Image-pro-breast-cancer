@@ -14,3 +14,7 @@ J2 = imopen(I,SE2)                     %https://in.mathworks.com/help/images/ref
 Jout = imsubtract(J1,J2)               %https://in.mathworks.com/help/images/ref/imsubtract.html
  or 
 Jout = imabsdiff(J1,J2)                %https://in.mathworks.com/help/images/ref/imabsdiff.html
+
+
+T = adaptthresh(Jout)                     %%https://in.mathworks.com/help/images/ref/adaptthresh.html
+BW = imbinarize(Jout,T);
