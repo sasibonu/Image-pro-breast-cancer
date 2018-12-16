@@ -16,5 +16,12 @@ Jout = imsubtract(J1,J2)               %https://in.mathworks.com/help/images/ref
 Jout = imabsdiff(J1,J2)                %https://in.mathworks.com/help/images/ref/imabsdiff.html
 
 
-T = adaptthresh(Jout)                     %%https://in.mathworks.com/help/images/ref/adaptthresh.html
+T = adaptthresh(Jout)                  %https://in.mathworks.com/help/images/ref/adaptthresh.html
 BW = imbinarize(Jout,T);
+
+
+%https://in.mathworks.com/help/images/ref/bwareaopen.html or
+%https://in.mathworks.com/help/images/ref/bwmorph.html
+BW2 = bwareaopen(BW,P)                 %where p is number of pixels yet to be decided
+
+%Give it back to the J1 as I.It is refined or just read the paper.
