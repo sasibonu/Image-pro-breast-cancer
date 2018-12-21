@@ -1,1 +1,9 @@
 %http://sci-hub.tw/https://doi.org/10.1109/42.41491
+
+
+%https://in.mathworks.com/matlabcentral/fileexchange/46876-an-efficient-median-filter
+%https://in.mathworks.com/matlabcentral/answers/7571-median-filter
+%http://www.librow.com/articles/article-1
+
+J = medfilt2(I)                      %https://in.mathworks.com/help/images/ref/medfilt2.html
+%Just median filtering not selective though
