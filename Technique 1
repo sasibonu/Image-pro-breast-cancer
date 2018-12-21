@@ -1,0 +1,13 @@
+%http://sci-hub.tw/https://doi.org/10.1109/PACRIM.1993.407291
+
+img=imread('cameraman.tif')
+i = double(img);
+
+%https://in.mathworks.com/matlabcentral/answers/152323-matlab-code-for-laplacian-of-guassian
+Log_filter = fspecial('log', [5,5], 4.0); % fspecial creat predefined filter.Return a filter.
+                                        % 25X25 Gaussian filter with SD =25 is created.
+img_LOG = imfilter(img, Log_filter, 'symmetric', 'conv');
+imshow(img_LOG, []);
+
+OR
+BW = edge(I,method,threshold,sigma) %https://in.mathworks.com/help/images/ref/edge.html
