@@ -10,4 +10,5 @@ img_LOG = imfilter(img, Log_filter, 'symmetric', 'conv');
 imshow(img_LOG, []);
 
 OR
-BW = edge(I,method,threshold,sigma) %https://in.mathworks.com/help/images/ref/edge.html
+BW = edge(I,log,0,sigma)                 %https://in.mathworks.com/help/images/ref/edge.html
+%sigma= sigma of Gaussian filters        %https://in.mathworks.com/matlabcentral/answers/277800-zero-crossings-in-an-image
