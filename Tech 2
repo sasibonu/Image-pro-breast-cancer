@@ -1,0 +1,12 @@
+meanIntensity = mean(I(:));     %https://in.mathworks.com/matlabcentral/answers/116358-how-can-i-find-mean-pixel-value-of-a-circle-and-standard-deviation-of-pixels-outside-the-circle
+ For Region growing 
+ %https://in.mathworks.com/matlabcentral/fileexchange/19084-region-growing
+ %https://in.mathworks.com/matlabcentral/fileexchange/35269-simple-single-seeded-region-growing
+ %https://in.mathworks.com/matlabcentral/fileexchange/32532-region-growing-2d-3d-grayscale
+ 
+ For extracting moments
+ %https://in.mathworks.com/help/stats/moment.html
+ 
+ For extracting fourier descriptors
+ %https://in.mathworks.com/matlabcentral/fileexchange/26810-fourier-descriptor
+ %https://in.mathworks.com/matlabcentral/fileexchange/52643-fd-gfd-bw-m-n-implementation-of-the-generic-fourier-descriptors
