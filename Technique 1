@@ -14,3 +14,7 @@ OR
 %http://homepages.inf.ed.ac.uk/rbf/HIPR2/zeros.htm
 BW = edge(I,log,0,sigma)                 %https://in.mathworks.com/help/images/ref/edge.html
 %sigma= sigma of Gaussian filters        %https://in.mathworks.com/matlabcentral/answers/277800-zero-crossings-in-an-image
+
+
+For Delaunay
+%https://in.mathworks.com/help/matlab/ref/delaunaytriangulation.html
