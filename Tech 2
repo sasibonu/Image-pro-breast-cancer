@@ -10,3 +10,9 @@ meanIntensity = mean(I(:));     %https://in.mathworks.com/matlabcentral/answers/
  For extracting fourier descriptors
  %https://in.mathworks.com/matlabcentral/fileexchange/26810-fourier-descriptor
  %https://in.mathworks.com/matlabcentral/fileexchange/52643-fd-gfd-bw-m-n-implementation-of-the-generic-fourier-descriptors
+
+For compactness
+For area      %https://in.mathworks.com/help/matlab/ref/boundary.html#buh3dcj    
+For perimeter  %https://in.mathworks.com/help/matlab/ref/alphashape.html
+%https://in.mathworks.com/matlabcentral/answers/110844-can-i-call-my-binary-image-as-contour-map-if-yes-then-how-can-i-extract-contour-outline-without-usi
+%https://in.mathworks.com/matlabcentral/answers/230934-how-to-extract-x-and-y-position-of-contour-line
