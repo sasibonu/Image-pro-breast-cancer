@@ -4,10 +4,12 @@ img=imread('cameraman.tif')
 i = double(img);
 
 %https://in.mathworks.com/matlabcentral/answers/152323-matlab-code-for-laplacian-of-guassian
-Log_filter = fspecial('log', [5,5], 4.0); % fspecial creat predefined filter.Return a filter.
+Log_filter = fspecial('log'); % fspecial creat predefined filter.Return a filter.
                                         % 25X25 Gaussian filter with SD =25 is created.
 img_LOG = imfilter(img, Log_filter, 'symmetric', 'conv');
+imgLOG = edge(img,'zerocross',Log_filter);
 imshow(img_LOG, []);
+imshow(imgLOG, [])
 
 OR
 
